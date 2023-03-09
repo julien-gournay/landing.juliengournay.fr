@@ -89,19 +89,3 @@ p {
     cursor: pointer;
     color: black;
 }
-
-
-footer {
-    position: absolute;
-    bottom: 25%;
-    left: 42%;
-}
-
-.footer {
-    font-size: 0.9em;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
