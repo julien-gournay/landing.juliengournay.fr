@@ -3,7 +3,7 @@
 
 function getChrono(){
     const now = new Date().getTime();
-    const countdownDate = new Date('March 25, 2023 18:00:00 GMT+01:00').getTime(); //CHANGER LA DATE ET HEURE
+    const countdownDate = new Date('September 30, 2023 18:00:00 GMT+01:00').getTime(); //CHANGER LA DATE ET HEURE
     //console.log(now, countdownDate);
 
     const distanceBase = countdownDate - now;
