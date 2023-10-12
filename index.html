@@ -1,52 +1,85 @@
-<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8"/>
     <title>Julien Gournay</title>
-    <meta name="description" content="Author: Julien Gournay">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/seting.css">
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <link rel="stylesheet" type="text/css" href="seting.css">
+    <link rel="stylesheet" type="text/css" href="css/infoalerte.css">
     <link rel="shortcut icon" type="image/png" href="img/logo_2023.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag Analystic (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6V1XWV51D"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-    
         gtag('config', 'G-T6V1XWV51D');
     </script>
 </head>
 
 <body>
-<div class="body">
-    <div class="logo">
-        <img src="img/logoName.png" href="#" id="logoName" alt="Logo d'une lune pour le thème sombre"> 
-    </div>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="home.html">Home</a></li>
+                <li><a href="https://link.juliengournay.fr" target="_blank" type="submit" class="btn">Mes réseaux</a></li>
+                <li><a href="privacy.html" type="submit" class="btn">Confidentialité</a></li>
+                <li><a href="contact.html" type="submit" class="btn">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="container">
-        <h1>COMING SOON</h1>
-        <!--<h1>Automne 2023</h1>-->
-        <!--<h2 class="date">Printemps 2023</h2>-->
 
-        <script type="text/javascript" src="main.js"></script>
+    <!-- SECTION 1 : EN TETE -->
+    <section id="sec-1">
+        <div class="video-bg__media" aria-hidden="true">
+            <img src="css/img/bg.png" alt="Video Preview">
+            <video autoplay loop muted playsInline src="img/bg_jg_4k.mp4"></video>
+        </div>
+        <div class="titleprinc">
+            <h1 id="countdown">COMING SOON</h1>
+        </div>
+        <a href="#sec-2"> <!-- bouton scrool -->
+            <div class="scroll-down"></div>   
+        </a>
+    </section>
 
-        <p class="p1">Mon nouveau site sera en ligne à l'automne 2023.<br>Pour l’instant vous pouvez toujours accéder à l’ancienne version<br>et suivre l'actualité sur mon profil instagram.</p>
 
+    <section id="sec-2">
+        <div class="conteneur reveal">
+            <article>
+                <h1 class="scroolh1">Sortie prévu le mercredi 20 décembre</h1>
+                <p class="scroolp">Pour l’instant vous pouvez toujours accéder à l’ancienne version et suivre l'actualité sur mon profil instagram.</p>
+            </article>
+        </div>
+    </section>
+
+
+    <section id="sec-3">
         <div class="div-button">
             <form id="formb">
                 <input class="button1" type="button" value="Visiter mon ancien site" onclick="window.open('https://juliengournay.wixsite.com/personnel')">
                 <input class="button2" type="button" value="Télécharger mon cv" onclick="window.open('files/cv_julien.pdf')">
                 <input class="button3" type="button" value="Stage Dalkia" onclick="window.open('https://juliengournay.fr/stage-dalkia')">
-                <input class="button4" type="button" value="Mes réseaux-sociaux" onclick="window.open('https://link.juliengournay.fr')">
-                <!--<input class="button5" type="button" value="Activer un rappel" onclick="window.open('https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NWVsc2MwMWkydGw0Z3NianFvczkxMGVqa3EgZnVycnltYW4xNDBAbQ&tmsrc=furryman140%40gmail.com')">-->
+                <input class="button3" type="button" value="Stage Ilévia" onclick="window.open('https://juliengournay.fr/stage-ilevia')">
             </form>
         </div>
-    </div>
+    </section>
     
-</div>
+
+    <footer class="footer">     <!--Section Footer page-->
+        <div class="foot_lien">
+            <p class="footerp">©2023 par Julien Gournay.</p>
+        </div>
+    </footer>
+
+
+    <!--Police d'écriture-->
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/product-sans');
+    </style>
+    <script type="text/javascript" src="main.js"></script> 
 </body>
+</html>
