@@ -1,0 +1,133 @@
+/* ----- Propriété du site -----*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /*overflow: hidden;*/
+}
+html{
+    font-family: 'Product Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--color-bg1);
+}
+
+
+/* ----- Barre de navigation ----- */
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.navbar a {     /* ----- Barre ----- */
+    color: var(--color-text1);
+    text-decoration: none;
+}
+.navbar .logo {     /* ----- Logo navbar ----- */
+    font-size: 2em;
+    font-weight: bold;
+}
+.navbar .nav-links ul {
+    display: flex;
+    list-style-type: none;
+    text-decoration-line: none;
+}
+.navbar .nav-links ul li {
+    margin: 0 25px;
+}
+.navbar .nav-links ul li.active a {
+    color: var(--color-text1);
+    font-weight: 600;
+}
+.navbar .nav-links ul li a:hover{
+    color: #ff4c29;
+}
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+#logoName {
+    width: 100px;
+    cursor: pointer;
+}
+
+/* ----- Configuration sections page ----- */
+section {     /* ----- Toute section ----- */
+    display: flex;
+}
+#sec-1{
+    background-color: var(--color-bg5);
+    color: var(--color-text2);
+    align-items: center; /* Centré sur la longeur */
+    justify-content: center; /* Centré sur la largeur */
+    text-align: center; /* Centré dans la div */
+    height: 100vh
+}
+#sec-2{
+    background: var(--color-bg1);
+    color: var(--color-text1);
+    display: flex;
+    justify-content: center; /* Centré sur la largeur */
+    height: 100vh
+}
+#sec-3{
+    background: var(--color-bg2);
+    color: var(--color-text1);
+    height: 100vh
+    
+}
+#sec-4{
+    background: var(--color-bg1);
+    color: var(--color-text1);
+    height: 100vh
+}
+#sec-5{
+    background: var(--color-bg2);
+    color: var(--color-text1);
+    height: 100vh
+}
+
+
+/* SECTION 1*/
+h1{
+    font-size: clamp(3rem,5vw,7rem) ;   /*clamp permet de définir une taille minimum et */
+    color: var(--color-text5);
+}
+.p1{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: clamp(1rem,1.5vw,1.5rem);
+    max-width: 40rem;
+    margin-top: 2%;
+    padding: 0 2rem ;
+}
+
+/* SECTION 2*/
+
+
+
+
+/* Footer page */
+.footer {
+    background: var(--color-bg2);
+    height: 7vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footerp{
+    font-size: 1rem;
+    color: var(--color-text1);
+}
+
+

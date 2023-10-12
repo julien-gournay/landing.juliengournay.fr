@@ -1,0 +1,166 @@
+/* ----- Propriété du site -----*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+html{
+    font-family: 'Product Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--color-bg1);
+}
+
+
+/* ----- Barre de navigation ----- */
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.navbar a {     /* ----- Barre ----- */
+    color: var(--color-text1);
+    text-decoration: none;
+}
+.navbar .logo {     /* ----- Logo navbar ----- */
+    font-size: 2em;
+    font-weight: bold;
+}
+.navbar .nav-links ul {
+    display: flex;
+    list-style-type: none;
+    text-decoration-line: none;
+}
+.navbar .nav-links ul li {
+    margin: 0 25px;
+}
+.navbar .nav-links ul li.active a {
+    color: var(--color-text1);
+    font-weight: 600;
+}
+.navbar .nav-links ul li a:hover{
+    color: #ff4c29;
+}
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+#logoName {
+    width: 100px;
+    cursor: pointer;
+}
+
+/* ----- Configuration sections page ----- */
+section {     /* ----- Toute section ----- */
+
+    display: flex;
+}
+#sec-1{
+    background-color: var(--color-bg5);
+    color: var(--color-text2);
+    align-items: center; /* Centré sur la longeur */
+    justify-content: center; /* Centré sur la largeur */
+    text-align: center; /* Centré dans la div */
+    height: 100vh
+}
+#sec-2{
+    background: var(--color-bg1);
+    color: var(--color-text1);
+    justify-content: center; /* Centré sur la largeur */
+}
+
+
+/* SECTION 1*/
+h1{
+    font-size: clamp(3rem,5vw,7rem) ;   /*clamp permet de définir une taille minimum et */
+    color: var(--color-text5);
+}
+.p1{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: clamp(1rem,1.5vw,1.5rem);
+    max-width: 40rem;
+    margin-top: 2%;
+    padding: 0 2rem ;
+}
+
+/* SECTION 2*/
+.formulaire {
+    margin: 8%;
+}
+  
+.champ {
+    margin-bottom: 15px;
+}
+  
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+  
+button {
+    background: var(--color-bg3);
+    color: var(--color-text2);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background: linear-gradient(90deg, #FF0000, #8F00FF);
+}
+
+
+select {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+option {
+    padding: 10px;
+    color: #555555;
+    cursor: pointer;
+}
+  
+option:hover {
+    background-color: #eee;
+}
+  
+option:selected {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+/* Footer page */
+.footer {
+    background: var(--color-bg2);
+    height: 7vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footerp{
+    font-size: 1rem;
+    color: var(--color-text1);
+}
