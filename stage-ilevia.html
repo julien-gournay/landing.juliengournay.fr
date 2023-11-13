@@ -4,7 +4,7 @@
 
     <title>Julien Gournay - Stage Ilévia 🚇</title>
     <link rel="stylesheet" type="text/css" href="css/stage.css">
-    <link rel="stylesheet" type="text/css" href="seting.css">
+    <link rel="stylesheet" type="text/css" href="css/seting.css">
     <link rel="shortcut icon" type="image/png" href="img/logo_2023.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -172,27 +172,20 @@
         </div>
       </a>
 
-    <!--Police d'écriture-->
-    <style>
-        @import url('http://fonts.cdnfonts.com/css/product-sans');
-    </style>
 
-    <script type="text/javascript" src="main.js"></script>
+            <!-- SECTION FOOTER : BAS DE PAGE -->
+      <footer class="footer">
+        <div class="foot_lien">
+            <p class="footerp">©2023 par Julien Gournay.</p>
+            <div class="footer_link">
+                <a href="https://frweb10.pulseheberg.net:8443/smb/web/view" target="_blank">Admin page</a>
+                <a href="privacy.html" type="submit" class="btn">Confidentialité</a>
+                <a href="https://github.com/julien-gournay/juliengournay.fr/releases/tag/V1.1.1" type="submit" class="btn">Version 1.1.1</a>
+            </div>
+        </div>
+      </footer>
 
-    <!--JS Changement d'img (thème sombre)-->
-    <script>
-        var icon = document.getElementById("icon");
-
-        icon.onclick = function(){
-            document.body.classList.toggle("dark-theme");
-            if(document.body.classList.contains("dark-theme")){
-            icon.src = "img/sun.png";
-
-            }else{
-            icon.src = "img/moon.png";
-            }
-        }
-    </script>
-
+      <script type="text/javascript" src="js/main.js"></script>
+      <script type="text/javascript" src="js/mode_sombre.js"></script>
 </body>
 </html>
