@@ -6,13 +6,13 @@ function envoyer() {
     var sujet = document.getElementById("sujet").value;
     var message = document.getElementById("message").value;
     var messageContainer = document.querySelector('#message-container');
-    var file = document.querySelector("input[type='file']").files[0];
+    //var file = document.querySelector("input[type='file']").files[0];
   
      // Validation du fichier
-    if (file.size > 1000000) {
-      alert("Le fichier est trop volumineux.");
-      return;
-    }
+    //if (file.size > 1000000) {
+    //  alert("Le fichier est trop volumineux.");
+    //  return;
+    //}
 
     // Création d'un objet FormData
     var formData = new FormData();
@@ -21,12 +21,12 @@ function envoyer() {
     formData.append("email", email);
     formData.append("sujet", sujet);
     formData.append("message", message);
-    formData.append("file", file);
+    //formData.append("file", file);
 
   
     // Envoi du formulaire
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "mail.php", true);
+    xhr.open("POST", "php/mail.php", true);
     xhr.onload = function() {
       if (xhr.status === 200) {
         // Formulaire envoyé avec succès
