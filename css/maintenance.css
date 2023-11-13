@@ -14,7 +14,7 @@ html{
 }
 body{
     overflow-x: hidden;
-    background: url("img/bg_soon.png");
+    background: url("img/bg.png");
     background-size: cover;
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);

@@ -104,7 +104,7 @@ section {     /* ----- Toute section ----- */
 p {
     font-size: 2vw;
     color: white;
-    margin-top: 1rem;
+
 }
 
 /* ----- BOUTONS ----- */
@@ -153,21 +153,6 @@ p {
     color: var(--color-text5);
 
 }  
-
-
-
-/* ----- FOOTER ----- */
-.footer {
-    background: var(--color-bg3);
-    height: 7vh;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.footerp{
-    font-size: 1rem;
-}
-
 
 /* ----- VIDEO BG ----- */
 .video-bg__media {

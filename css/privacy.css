@@ -147,6 +147,7 @@ h3{
 
 /* Footer page */
 .footer {
+    display: flex;
     background: var(--color-bg2);
     height: 7vh;
     align-items: center;

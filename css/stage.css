@@ -11,7 +11,7 @@
   }
   
   body {
-    background-color: var(--color-bg2);
+    background-color: var(--color-bg1);
     font-family: system-ui, sans-serif;
     color: hsl(230, 7%, 23%);
     font-size: 1rem;
