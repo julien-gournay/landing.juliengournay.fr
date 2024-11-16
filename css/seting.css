@@ -1,32 +1,3 @@
-/* ----- Propriété du site -----*/
-@import url('http://fonts.cdnfonts.com/css/product-sans');
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-html{
-    font-family: 'Product Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-body{
-    padding-bottom: 300px;
-    overflow-x: hidden;
-    background: url("img/bg.png");
-    background-size: cover;
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-/* ----- Couleur variable site -----*/
 :root{
     --gris: #0E0E0E;
     --rouge: #FF0000;
@@ -37,15 +8,90 @@ body{
     --color-bg1: #ffffff;
     --color-bg2: #f4f4f4;
     --color-bg3: #0E0E0E;
+    --color-bg4: #ff9681;
+    --color-bg5: #81ddff;
     --color-text1: #0E0E0E;
     --color-text2: #ffffff;
+    --color-text3: #666666;
+    --color-text4: #ff4c29;
+    --color-text5: #299fff;
 }
 
-/* Couleur lors du theme sombre */
-.dark-theme{ 
+.dark-theme{ /* Couleur lors du theme sombre */
     --color-bg1: #0E0E0E;
     --color-bg2: #000000;
     --color-bg3: #ffffff;
+    --color-bg4: #ff4c29;
+    --color-bg5: #299fff;
     --color-text1:#edf2fc;
     --color-text2: #000000;
+    --color-text3: #a9a9a9;
+    --color-text4: #ff9681;
+    --color-text5: #81ddff;
+}
+
+
+.orange-themeUser{ /* Couleur lors du theme user */
+    --color-bg2: #ff4c29;
+
+}
+
+
+/* ----- NAVIGATION ----- */
+.navbar {
+    position: absolute;
+    padding: 40px;
+    display: flex;
+    justify-content: center; /* Centré sur la largeur */
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 5;
+    position: fixed;
+}
+.navbar a {     /* ----- Barre ----- */
+    color: #fff;
+    font-size: 2.5vmin;
+    text-decoration: none;
+}
+.nav-links{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+}
+.navbar .nav-links ul {
+    display: flex;
+    list-style-type: none;
+    text-decoration-line: none;
+}
+.navbar .nav-links ul li {
+    margin: 0 15px;
+}
+.navbar .nav-links ul li.active a {
+    color: var(--orange);
+    font-weight: 700;
+}
+.navbar .nav-links ul li a:hover{
+    color: #ff4c29;
+}
+
+
+/* ----- FOOTER ----- */
+.footer {
+    display: flex;
+    background: var(--d);
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footerp{
+    font-size: 1rem;
+}
+.footer_link{
+    gap: 1rem;
+    display: flex;
+}
+.footer_link a{
+    color: var(--color-text2);
 }

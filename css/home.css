@@ -27,7 +27,7 @@ img, video, svg {
 /* ----- NAVIGATION ----- */
 .navbar {
     position: absolute;
-    padding: 50px;
+    padding: 40px;
     display: flex;
     justify-content: center; /* Centré sur la largeur */
     width: 100%;
@@ -39,6 +39,12 @@ img, video, svg {
     color: var(--color-text2);
     font-size: 2.5vmin;
     text-decoration: none;
+}
+.nav-links{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
 }
 .navbar .nav-links ul {
     display: flex;
@@ -73,7 +79,8 @@ section {     /* ----- Toute section ----- */
 #sec-3{ /* Section bouton */
     background: var(--color-bg3);
     color: var(--color-text1);
-    height: 50vh;
+    width: 100%;
+    height: 100vh;
     justify-content: center; /* Centré sur la largeur */
 }
 
@@ -104,7 +111,7 @@ section {     /* ----- Toute section ----- */
 p {
     font-size: 2vw;
     color: white;
-    margin-top: 1rem;
+
 }
 
 /* ----- BOUTONS ----- */
@@ -153,21 +160,6 @@ p {
     color: var(--color-text5);
 
 }  
-
-
-
-/* ----- FOOTER ----- */
-.footer {
-    background: var(--color-bg3);
-    height: 7vh;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.footerp{
-    font-size: 1rem;
-}
-
 
 /* ----- VIDEO BG ----- */
 .video-bg__media {
@@ -318,6 +310,14 @@ article {     /* ----- Titre ----- */
     max-inline-size: 40ch;
     font-size: 4vmin;
     margin: 2rem auto;
+}
+
+.scroolp2{
+    line-height: 1.35;
+    max-inline-size: 60ch;
+    font-size: 2.5vmin;
+    margin: 2rem auto;
+    font-style: italic;
 }
 
 

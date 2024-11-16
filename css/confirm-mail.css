@@ -66,33 +66,19 @@ section {     /* ----- Toute section ----- */
     display: flex;
 }
 #sec-1{
-    background-color: var(--color-bg4);
+    background-color: var(--color-bg2);
     color: var(--color-text2);
     align-items: center; /* Centré sur la longeur */
     justify-content: center; /* Centré sur la largeur */
     text-align: center; /* Centré dans la div */
     height: 100vh
 }
-#sec-2{
-    background: var(--color-bg2);
-    color: var(--color-text1);
-    justify-content: center; /* Centré sur la largeur */
-}
-#sec-3{
-    background: var(--color-bg1);
-    color: var(--color-text1);
-    align-items: center;
-}
 
 
 /* SECTION 1*/
 h1{
     font-size: clamp(3rem,5vw,7rem) ;   /*clamp permet de définir une taille minimum et */
-    color: var(--color-text4);
-}
-p{
-    font-size: 1rem;
-       
+    color: var(--color-text5);
 }
 .p1{
     margin-left: auto;
@@ -103,51 +89,11 @@ p{
     padding: 0 2rem ;
 }
 
-/* SECTION 2*/
-.sec2-div1, .sec3-div1{
-    margin: 5vw 10vw;
-}
-.sec2-div1 h2{
-    color: var(--rouge);
-    font-size: 2rem;
-    max-width: 30rem;
-    padding: 3.5rem 0 1rem;
-}
 
-/* SECTION 3*/
-.sec3-div1{
-    margin: 5vw 10vw;
-}
-.sec3-div1 h2{
-    color: var(--rouge);
-    font-size: 2rem;
-    max-width: 30rem;
-    padding: 0 0 1rem;
-}
-h3{
-    color: var(--orange);
-}
-.sec3-div3{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    padding-top: 5%;
-    grid-template-rows: repeat(auto-fit, 130px);
-    grid-template-columns: repeat(auto-fit, 390px);
-    grid-gap: 50px;
-    justify-content: center; /* Centré sur la largeur */
-}
-.sec3-grid{
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    align-items: center; /* Centré sur la longeur */
-}
 
 
 /* Footer page */
 .footer {
-    display: flex;
     background: var(--color-bg2);
     height: 7vh;
     align-items: center;

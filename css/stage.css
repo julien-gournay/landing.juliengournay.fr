@@ -11,7 +11,7 @@
   }
   
   body {
-    background-color: var(--color-bg2);
+    background-color: var(--color-bg1);
     font-family: system-ui, sans-serif;
     color: hsl(230, 7%, 23%);
     font-size: 1rem;
@@ -447,7 +447,7 @@
   }
   
   .ad5-padding-y-lg {
-    padding-top: var(--ad5-space-lg);
+    padding-top: 8rem;
     padding-bottom: var(--ad5-space-lg);
   }
   
@@ -570,7 +570,7 @@
               0 3.5px 6px hsla(230, 13%, 9%, 0.09);
   border-radius: 0.375em;
   transition: 0.3s;
-  margin: 10%;
+  margin: 2rem 5rem;
 }
 
 .banner__grid {
