@@ -2,8 +2,12 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Julien Gournay</title>
-    <link rel="stylesheet" type="text/css" href="/css/contact.css">
-    <link rel="stylesheet" type="text/css" href="seting.css">
+    <meta name="author" content="Julien Gournay">
+    <meta name="description" content="Vous souhaitez me contacter pour diverses sujets, venez me parler.">
+    <meta name="keywords" content="julien,gournay,sio,bts,informatique,cv,portfolio,developpeur">
+
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="css/seting.css">
     <link rel="stylesheet" type="text/css" href="css/infoalerte.css">
     <link rel="shortcut icon" type="image/png" href="img/logo_2023.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -45,17 +49,16 @@
         <div class="formulaire">
             <h1>Formulaire d'envoi de mail</h1>
 
-            <li class="chipli">
+            <!--<li class="chipli">
                 <span class="chip chip--error">
                   <em class="chip__icon-wrapper">
                     <svg class="cd-icon" viewBox="0 0 12 12" aria-hidden="true"><line x1="6" y1="1.75" x2="6" y2="7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><circle cx="6" cy="10" r="1" fill="currentColor"/></svg>
                   </em>
-            
-                  <i class="chip__label">Suite à un problème technique, le formulaire ne fonctionne pas, veillez réessayer plustard.<br>Une mise à jour de correctif est prévue dans la journée.</i>
+                  <i class="chip__label">Suite à un problème technique, le formulaire ne fonctionne pas, veillez réessayer plus tard.<br>Une mise à jour de correctif est prévue prochainement.</i>
                 </span>
-            </li>
+            </li>-->
 
-            <form action="mail.php" method="post" enctype="multipart/form-data">
+            <form action="php/mail.php" method="post" enctype="multipart/form-data">
                 <div class="champ">
                     <label for="nom">Nom : *</label>
                     <input type="text" name="nom" id="nom" required>
@@ -73,9 +76,10 @@
                     <select name="sujet" id="sujet">
                         <option value="">--Choisir un objet--</option>
                         <option value="Demande d'informations">Demande d'informations</option>
+                        <option value="Proposition de stage">Proposition de stage</option>
                         <option value="Discuter ensemble">Discuter ensemble</option>
                         <option value="Me recruter">Me recruter</option>
-                        <option value="Me recruter">Signaler un bug</option>
+                        <option value="Signaler un bug">Signaler un bug</option>
                         <option value="Autre demande">Autre demande</option>
                     </select>
                 </div>
@@ -95,36 +99,20 @@
     
 
 
-    <footer class="footer">     <!--Section Footer page-->
+    <!-- SECTION FOOTER : BAS DE PAGE -->
+    <footer class="footer">
         <div class="foot_lien">
             <p class="footerp">©2023 par Julien Gournay.</p>
+            <div class="footer_link">
+                <a href="https://frweb10.pulseheberg.net:8443/smb/web/view" target="_blank">Admin page</a>
+                <a href="privacy.html" type="submit" class="btn">Confidentialité</a>
+                <a href="https://github.com/julien-gournay/juliengournay.fr/releases/tag/V1.1.1" type="submit" class="btn">Version 1.1.1</a>
+            </div>
         </div>
     </footer>
 
-
-    <!--Police d'écriture-->
-    <style>
-        @import url('http://fonts.cdnfonts.com/css/product-sans');
-    </style>
-
-    <script type="text/javascript" src="main.js"></script>
-    <!--JS Changement d'img (thème sombre)-->
-    <script>
-        var icon = document.getElementById("icon");
-        var logo = document.getElementById("logoName")
-
-        icon.onclick = function(){
-            document.body.classList.toggle("dark-theme");
-            if(document.body.classList.contains("dark-theme")){
-            icon.src = "img/sun.png";
-            logo.src = "img/logoName.png";
-            }else{
-            icon.src = "img/moon.png";
-            logo.src = "img/logoName_s.png";
-            }
-        }
-    </script>
-
-    <script type="text/javascript" src="js/contact.js"></script> 
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/mode_sombre.js"></script>
+    <!--<script type="text/javascript" src="js/contact.js"></script>-->
 </body>
 </html>
